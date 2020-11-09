@@ -27,10 +27,10 @@ function Pagination({currentPage,countriesPerPage,totalCountries,paginate}) {
         <nav>        
             <ul className="pagination justify-content-center">
                 <li key={new Date().getDate.toString()} className={`${(currentPage===1 && 'page-item disabled')||'page-item'}`} >
-                    <a onClick={()=>handleA(1)} href="!#" className="page-link">&lt;&lt;</a>{/* i pradzia pagination */}
+                    <a onClick={()=>handleA(1)} href="!#" className="page-link pad">&lt;&lt;</a>{/* i pradzia pagination */}
                 </li>
                 <li key={0} className={`${(currentPage===1 && 'page-item disabled')||'page-item'}`} >
-                    <a onClick={()=>handleA(currentPage-1)} href="!#" className="page-link">Prev</a>{/* vienu atgal pagination */}
+                    <a onClick={()=>handleA(currentPage-1)} href="!#" className="page-link pad">Prev</a>{/* vienu atgal pagination */}
                 </li>
                 {   
                     pageNumbers.slice(startIndex,endIndex).map(page=>{ /* 5 mygtukai su puslapiais pagination */
@@ -42,10 +42,10 @@ function Pagination({currentPage,countriesPerPage,totalCountries,paginate}) {
                     )                  
                 })}
                 <li key={pageNumbers.length+1} className={`${(currentPage===pageNumbers.length && 'page-item disabled')||'page-item'}`} >
-                    <a onClick={()=>handleA(currentPage+1)}  href="!#" className="page-link">Next</a>{/* vienu i prieki pagination */}
+                    <a onClick={()=>handleA(currentPage+1)}  href="!#" className="page-link pad">Next</a>{/* vienu i prieki pagination */}
                 </li>
                 <li key={new Date().getTime().toString()} className={`${(currentPage===pageNumbers.length && 'page-item disabled')||'page-item'}`} >
-                    <a onClick={()=>handleA(pageNumbers.length)} href="!#" className="page-link">&gt;&gt;</a>{/* i pabaiga pagination */}
+                    <a onClick={()=>handleA(pageNumbers.length)} href="!#" className=" page-link pad">&gt;&gt;</a>{/* i pabaiga pagination */}
                 </li>
             </ul>
         </nav>
