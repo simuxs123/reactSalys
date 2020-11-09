@@ -1,0 +1,34 @@
+img {
+    width:250px;
+    height: 150px;
+}
+.above-photo {
+    width:250px;
+    margin:0 auto;
+}
+.above-photo p{
+    font-size:17px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.title-img{
+    width:50px;
+    height: 30px;
+}
+span {
+    font-weight: bold;
+}
+.modal-content .modal-header {
+    background-color: rgb(243, 241, 237);
+    padding:0.6rem;
+}
+@media (max-width: 575.98px) {
+    img {
+    width:100%;
+    height: auto;
+}
+.above-photo {
+    width:100%;
+    margin:0;
+}
+ }
