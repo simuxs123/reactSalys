@@ -6,6 +6,7 @@ function Modale({areaCheck,populationCheck,name,flag,currencies,languages,show,o
     return (
         <Modal
       show={show}
+      onHide={onHide}
       size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
