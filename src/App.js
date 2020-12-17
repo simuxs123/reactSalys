@@ -12,7 +12,7 @@ function App() {
     }
   return (
     <div className="container text-center">
-      <h1>Countrie list</h1>
+      <h1>Countries list</h1>
       <div className="row justify-content-center">
         <div className="col-12 col-md-11 col-lg-9">
           {<input type="text" className="form-control" placeholder="Country" value={search} onChange={(e)=>setSearch(e.target.value)}/>} {/* salies paieska vedant raides */}

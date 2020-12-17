@@ -17,6 +17,7 @@ function List({fetchUrl,search}) {
         }))
     },[search,countries])
     const paginate = (pg)=>{ //paspausto puslapio numeris
+        console.log("labas")
           setCurrentPage(pg);
     }
     
