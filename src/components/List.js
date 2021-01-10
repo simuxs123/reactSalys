@@ -6,7 +6,7 @@ function List({fetchUrl,search}) {
     const [filteredCountries, setFilteredCountries]=useState([]);
     const {countries,isLoading}=useFetch(fetchUrl); // siunciam filtravimo url i custom hook 
     const [currentPage,setCurrentPage]=useState(1); 
-    const [countriesPerPage]=useState(10);
+    const [countriesPerPage]=useState(12);
     const indexOfLastPost=currentPage*countriesPerPage;
     const indexOfFirstPost=indexOfLastPost-countriesPerPage;
     const currentCountries=filteredCountries.slice(indexOfFirstPost,indexOfLastPost); //pasidarome 10 saliu sarasa kiekvienam paspaustam puslapiui
@@ -22,10 +22,10 @@ function List({fetchUrl,search}) {
     }
     
     if (isLoading){
-        return <p>Loading ...</p>;
+        return <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>;
     }
     return (
-        <div>
+        <div >
             <div className="row">
                 {currentCountries.map((e)=> <SingleCountry key={e.numericCode} {...e}/>)} {/* Tvarkome kiekviena sali */}                  
             </div>

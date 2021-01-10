@@ -11,7 +11,7 @@ function App() {
       setSearch("")
     }
   return (
-    <div className="container text-center">
+    <div  className="container text-center text-white">
       <h1>Countries list</h1>
       <div className="row justify-content-center">
         <div className="col-12 col-md-11 col-lg-9">
